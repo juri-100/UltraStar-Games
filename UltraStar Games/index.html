@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraStar Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <header>
+        <h1>UltraStar Games</h1>
+        <nav>
+            <button id="view-inventory-btn">View Stock</button>
+            <button id="view-admin-btn">Manage Inventory</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inventory-interface">
+            <h2>Current Stock</h2>
+            <div id="game-list">
+                </div>
+            <div class="summary-card">
+                <h3>Total Inventory Value: <span id="total-value">$0.00</span></h3>
+            </div>
+        </section>
+
+        <section id="admin-interface" style="display: none;">
+            <h2>Manage Inventory</h2>
+            <div class="form-container">
+                <input type="text" id="game-title" placeholder="Game Title">
+                <select id="game-platform">
+                    <option value="" disabled selected>Platform</option>
+                    <option value="PlayStation">PlayStation</option>
+                    <option value="Xbox">Xbox</option>
+                    <option value="Nintendo">Nintendo</option>
+                    <option value="PC">PC</option>
+                </select>
+                <input type="number" id="game-price" placeholder="Price ($)" min="0" step="0.01">
+                <button id="add-game-btn">Add to Inventory</button>
+            </div>           
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
